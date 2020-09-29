@@ -1,5 +1,5 @@
 # TDD Katas in C#!
-Sample Katas written in Test Driven Development
+Sample Katas written using Test Driven Development
 
 ## Example 1: Create a fully implemented List utilizing Test Driven Development.
 Implement the following methods:
