@@ -1,4 +1,4 @@
-# dot-net-tdd
+# TDD Katas in C#!
 Sample Katas written in Test Driven Development
 
 ## Example 1: Create a fully implemented List utilizing Test Driven Development.
