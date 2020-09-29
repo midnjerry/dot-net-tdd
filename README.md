@@ -10,7 +10,21 @@ public object Add();
 public object Insert(int index);
 public int Size();
 ```
-## Example 2: 
+## Example 2: Get prime factors of a number in sorted order.
+Write a class named “PrimeFactors” that has one method: generate.
+```
+List<Integer> Generate(Integer number);
+```
+That list contains the prime factors in numerical sequence.  Remember: 1 is not a prime number!
+
+Sample Outputs:
+```
+Generate(1) returns []
+```
+```
+Generate(12) returns [2,2,3]
+12 = 2 * 2 * 3
+```
 
 ## Example 3: Implement a String Calculator
 Source: https://osherove.com/tdd-kata-1
