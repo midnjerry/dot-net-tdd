@@ -29,7 +29,7 @@ Generate(12) returns [2,2,3]
 ## Example 3: Implement a String Calculator
 Source: https://osherove.com/tdd-kata-1
 
-###Create a simple String calculator with a method signature:
+### Create a simple String calculator with a method signature:
 ```
 int Add(string numbers)
 ```
