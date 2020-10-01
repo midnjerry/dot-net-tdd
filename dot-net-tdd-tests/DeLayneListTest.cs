@@ -147,16 +147,72 @@ namespace dot_net_tdd_tests
             list.Remove(6);
         }
 
-/*        [TestMethod]
+        [TestMethod]
         public void Remove_ShouldRemoveFirstElement()
         {
             list.Add('a');
             list.Add('b');
             list.Add('c');
             Assert.AreEqual('a', list.Remove(0));
-            Assert.AreEqual(2, list.Size());
-        }*/
+            Assert.AreEqual(2, list.Size);
+        }
 
+        [TestMethod]
+        public void Remove_ShouldRemoveSecondElement()
+        {
+            list.Add('a');
+            list.Add('b');
+            list.Add('c');
+            Assert.AreEqual('b', list.Remove(1));
+            Assert.AreEqual(2, list.Size);
+            Assert.AreEqual('a', list.Get(0));
+            Assert.AreEqual('c', list.Get(1));
+        }
+
+        [TestMethod]
+        public void Remove_ShouldRemoveThirdElement()
+        {
+            list.Add('a');
+            list.Add('b');
+            list.Add('c');
+            list.Add("def");
+            Assert.AreEqual('c', list.Remove(2));
+            Assert.AreEqual(3, list.Size);
+            Assert.AreEqual('a', list.Get(0));
+            Assert.AreEqual('b', list.Get(1));
+            Assert.AreEqual("def", list.Get(2));
+        }
+
+        [TestMethod]
+        public void Remove_ShouldRemoveLastElement()
+        {
+            list.Add('a');
+            list.Add('b');
+            list.Add('c');
+            list.Add("def");
+            Assert.AreEqual("def", list.Remove(3));
+            Assert.AreEqual(3, list.Size);
+            Assert.AreEqual('a', list.Get(0));
+            Assert.AreEqual('b', list.Get(1));
+            Assert.AreEqual('c', list.Get(2));
+        }
+
+        [TestMethod]
+        public void Add_AfterRemovingLastElementShouldProperlyAdd()
+        {
+            list.Add('a');
+            list.Add('b');
+            list.Add('c');
+            list.Add("def");
+            list.Remove(3);
+            list.Add("test");
+
+            Assert.AreEqual(4, list.Size);
+            Assert.AreEqual('a', list.Get(0));
+            Assert.AreEqual('b', list.Get(1));
+            Assert.AreEqual('c', list.Get(2));
+            Assert.AreEqual("test", list.Get(3));
+        }
         //RED
         //GREEN
         //REFACTOR
